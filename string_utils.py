@@ -14,3 +14,8 @@ def truncate(text, limit):
     if len(text) <= limit:
         return text
     return text[:limit] + "..."
+
+
+def title_case(text):
+    words = text.split()
+    return " ".join(w.capitalize() for w in words)
